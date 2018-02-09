@@ -9,14 +9,12 @@ namespace CarInterface
     class Program
     {
         static void Main(string[] args)
-        {
-            
+        {          
             Vehicle myVehicle = new Vehicle(new ManualTransmission());
 
             Console.WriteLine("This vehicle is equipped with a transmission of type " + myVehicle.TransmissionType.ToString());
 
-            myVehicle.ShiftIntoGear();
-            
+            myVehicle.ShiftIntoGear();           
         }
     }
 }
